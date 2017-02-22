@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Timeburner';
+  src: url(../fonts/timeburner.regular.ttf);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-family: segoe ui, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.workshop {
+  min-height: 100%;
+  font-size: 14px;
+  background-color: black;
+  max-width: 2000px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all 500ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .workshop {
+    font-size: 18px;
+  }
+}
+
+.glogo {
+  font-size: 2.4em;
+  font-family: 'Timeburner', Segoe ui, sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.workshop canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0
+}
+
+.gawds {
+  width: 90%;
+  max-width: 360px;
+  height: auto;
+  padding: 20px 10px;
+}
+
+.wstitle {
+  color: white;
+  font-size: 1.6em;
+  font-family: 'Timeburner', Segoe ui, sans-serif;
+  line-height: 1.6;
+}
+
+.wsinfo {
+  max-width: 860px;
+  padding: 10px;
+  color: #ff3860;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #310736;
+  border-radius: 1em 1em 0 0;
+  font-size: 1.4em;
+  line-height: 1.5;
+  animation: chabes 3s infinite linear;
+}
+
+.wsdet {
+  max-width: 860px;
+  padding: 15px;
+  background-color: #ff3860;
+  margin: 0 auto;
+  color: #310736;
+  line-height: 1.4;
+  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-size: 1.4em;
+  text-align: left;
+}
+
+.wsdet p {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.wsdet p:not(.diff) {
+	text-indent:1em;
+}
+
+.wsreg {
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ff3860;
+  background-color: #310736;
+  display: block;
+  max-width: 860px;
+  padding: 14px;
+  border-radius: 0 0 1em 1em;
+  transition: all 300ms linear;
+}
+
+.wsreg:hover {
+  transform: rotateX(0deg);
+  transform-origin: top;
+}
+
+.wsreg p { transition:all 300ms linear;}
+
+.wsreg:hover p {
+	transform:scale(1.2);
+}
+.wscontact {
+  max-width: 3960px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff3860;
+  color: #310736;
+  position: absolute;
+  bottom: 0;
+  border-top: 5px solid #310736;
+  font-size: 1.2em;
+}
+
+.topics {
+  max-width: 768px;
+  width: 90%;
+  height: auto;
+  transform: scale(0.5);
+  animation: chime 300ms infinite linear;
+}
+
+.gCont { float:right;width:40%;}
+.wCont { float:left;width:40%;}
+
+.blankdiv {
+  max-width: 2000px;
+  height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .wsreg {
+    border-radius: 0;
+  }
+  .wsinfo {
+    border-radius: 0;
+  }
+}
+
+@keyframes chime {
+  from {
+    transform: rotateY(10deg) scale(0.5);
+  }
+  to {
+    transform: rotateY(-10deg) scale(0.5);
+  }
+}
+
+@keyframes chabes {
+  0% {
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+  }
+  25% {
+    transform: rotateX(-10deg);
+    transform-origin: bottom;
+  }
+  75% {
+    transform: rotateX(10deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+  }
+}
