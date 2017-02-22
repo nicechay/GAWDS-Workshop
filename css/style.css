@@ -70,22 +70,22 @@ body {
 .wsinfo {
   max-width: 860px;
   padding: 10px;
-  color: #ff3860;
+  color: #f2f4e7;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: #310736;
+  background-color: #343142;
   border-radius: 1em 1em 0 0;
   font-size: 1.4em;
   line-height: 1.5;
-  animation: chabes 3s infinite linear;
+  
 }
 
 .wsdet {
   max-width: 860px;
   padding: 15px;
-  background-color: #ff3860;
+  background-color: #f2f4e7;
   margin: 0 auto;
-  color: #310736;
+  color: #343142;
   line-height: 1.4;
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
   font-size: 1.4em;
@@ -106,8 +106,8 @@ body {
   margin: 0 auto;
   cursor: pointer;
   text-decoration: none;
-  color: #ff3860;
-  background-color: #310736;
+  color: #f2f4e7;
+  background-color: #343142;
   display: block;
   max-width: 860px;
   padding: 14px;
@@ -123,17 +123,17 @@ body {
 .wsreg p { transition:all 300ms linear;}
 
 .wsreg:hover p {
-	transform:scale(1.2);
+	transform:scale(1.05);
 }
 .wscontact {
   max-width: 3960px;
   width: 100%;
   padding: 10px;
-  background-color: #ff3860;
-  color: #310736;
+  background-color: #f2f4e7;
+  color: #343142;
   position: absolute;
   bottom: 0;
-  border-top: 5px solid #310736;
+  border-top: 5px solid #343142;
   font-size: 1.2em;
 }
 
@@ -150,7 +150,7 @@ body {
 
 .blankdiv {
   max-width: 2000px;
-  height: 200px;
+  height: 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,21 +171,3 @@ body {
   }
 }
 
-@keyframes chabes {
-  0% {
-    transform: rotateX(0deg);
-    transform-origin: bottom;
-  }
-  25% {
-    transform: rotateX(-10deg);
-    transform-origin: bottom;
-  }
-  75% {
-    transform: rotateX(10deg);
-    transform-origin: bottom;
-  }
-  100% {
-    transform: rotateX(0deg);
-    transform-origin: bottom;
-  }
-}
